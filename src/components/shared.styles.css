@@ -1,0 +1,28 @@
+.header-title{
+    text-align: center;
+}
+
+.slides-container{
+    margin:auto;
+    background-color: rgb(8, 8, 8);
+}
+.slides{
+    width: min(300px, 80%);
+    height: 300px;
+}
+
+.grid-container{
+    display: grid;
+    gap: 1rem;
+    padding: .5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-container .grid-item{
+    height: 150px;
+    background-color:burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}

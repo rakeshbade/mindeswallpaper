@@ -1,8 +1,5 @@
-import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonRouterOutlet } from '@ionic/react';
+import { IonApp, IonIcon, IonLabel, IonRouterOutlet, IonTabBar, IonTabButton, IonTabs } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import Home from './pages/Home';
-
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
 
@@ -21,18 +18,40 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import { Redirect, Route } from 'react-router';
+import {brushOutline, colorPaletteOutline, flowerOutline, textOutline} from "ionicons/icons"
+
+import HomePage from './pages/Home/Home.page';
+import ColorPage from "./pages/Color/Color.page";
+import PatternPage from "./pages/Pattern/Pattern.page";
+import TextPage from "./pages/Text/Text.page";
 
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
-      <IonRouterOutlet>
-        <Route exact path="/home">
-          <Home />
-        </Route>
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
-      </IonRouterOutlet>
+      <IonTabs>
+        <IonRouterOutlet>
+          <Route path="/tabs/:tab(home)" component={HomePage} exact />
+          <Route path="/color" component={ColorPage} exact />
+          <Route path="/pattern" component={PatternPage} exact />
+          <Route path="/text" component={TextPage} exact />
+          <Route path="/" render={() => <Redirect to="/tab1" />} exact={true} />
+        </IonRouterOutlet>
+        <IonTabBar slot="bottom">
+          <IonTabButton tab="color" href="/color">
+            <IonIcon icon={colorPaletteOutline} />
+            <IonLabel>Color</IonLabel>
+          </IonTabButton>
+          <IonTabButton tab="pattern" href="/pattern">
+            <IonIcon icon={flowerOutline} />
+            <IonLabel>Pattern</IonLabel>
+          </IonTabButton>
+          <IonTabButton tab="text" href="/text">
+            <IonIcon icon={textOutline} />
+            <IonLabel>Text</IonLabel>
+          </IonTabButton>
+        </IonTabBar>
+      </IonTabs>
     </IonReactRouter>
   </IonApp>
 );

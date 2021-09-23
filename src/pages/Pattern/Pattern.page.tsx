@@ -16,7 +16,7 @@ const PatternPage: React.FC = () => (
                     <IonCol className="ion-text-end">ion-col</IonCol>
                 </IonRow>
             </IonGrid>
-            <GridLayoutComponent items={[1, 2, 3, 4, 5, 6, 7, 8, 9]} />
+            <GridLayoutComponent items={[1, 2, 3, 4, 5, 6, 7, 8, 9]} type="pattern" />
         </IonContent>
     </IonPage>
 );

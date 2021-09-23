@@ -2,9 +2,19 @@ import { IonCol, IonContent, IonGrid, IonPage, IonRow } from '@ionic/react';
 import TitleComponent from "./../../components/title.component";
 import PreviewComponent from "../../components/preview.component";
 import GridLayoutComponent from "../../components/grid.layout.component"
-import React from 'react'
-const ColorPage: React.FC = () => (
-    <IonPage id="color">
+import React, { useEffect, useState } from 'react'
+import * as ColorThemes from "./../../local/color.data.json"
+const ColorPage: React.FC = () => {
+    const [colorCollection, setColorCollection] = useState<Array<any>>([])
+    useEffect(() => {
+        const colors = ColorThemes.themes;
+        setColorCollection(colors);
+        return () => {
+
+        }
+    }, []);
+
+    return (<IonPage id="color">
         <TitleComponent title="Color" />
         <IonContent>
             <PreviewComponent />
@@ -16,9 +26,11 @@ const ColorPage: React.FC = () => (
                     <IonCol className="ion-text-end">ion-col</IonCol>
                 </IonRow>
             </IonGrid>
-            <GridLayoutComponent items={[1, 2, 3, 4, 5, 6, 7, 8, 9]} />
+            {
+                colorCollection.length > 0 ? <GridLayoutComponent items={colorCollection}  type="color" /> : ""
+            }
         </IonContent>
-    </IonPage>
-);
+    </IonPage>)
+};
 
 export default ColorPage

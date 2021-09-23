@@ -20,9 +20,20 @@
 
 .grid-container .grid-item{
     height: 150px;
-    background-color:burlywood;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 1rem;
+}
+
+.color-grid-content{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    list-style: none;
+}
+.color-grid-content li{
+    height: 100%;
+   flex-grow: 1;
+   list-style: none;
 }

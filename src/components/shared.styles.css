@@ -5,10 +5,15 @@
 .slides-container{
     margin:auto;
     background-color: rgb(8, 8, 8);
+    height: 100%;
 }
 .slides{
-    width: min(300px, 80%);
-    height: 300px;
+    /* width: min(300px, 80%); */
+    height: 100%;
+}
+
+.slides .slide-image{
+    height: 100%;
 }
 
 .grid-container{
@@ -25,14 +30,14 @@
     align-items: center;
 }
 
-.color-grid-content{
+.color-grid-content, .pattern-grid-content{
     display: flex;
     width: 100%;
     height: 100%;
     border-radius: .5rem;
     list-style: none;
 }
-.color-grid-content li{
+.color-grid-content li, .pattern-grid-content li{
     height: 100%;
    flex-grow: 1;
    list-style: none;

@@ -19,12 +19,13 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 import { Redirect, Route } from 'react-router';
-import {brushOutline, colorPaletteOutline, flowerOutline, textOutline} from "ionicons/icons"
+import { colorPaletteOutline, downloadOutline, flowerOutline, textOutline} from "ionicons/icons"
 
 import HomePage from './pages/Home/Home.page';
 import ColorPage from "./pages/Color/Color.page";
 import PatternPage from "./pages/Pattern/Pattern.page";
 import TextPage from "./pages/Text/Text.page";
+import ApplyPage from './pages/Apply/Apply.page';
 
 const App: React.FC = () => (
   <IonApp>
@@ -35,7 +36,8 @@ const App: React.FC = () => (
           <Route path="/color" component={ColorPage} exact />
           <Route path="/pattern" component={PatternPage} exact />
           <Route path="/text" component={TextPage} exact />
-          <Route path="/" render={() => <Redirect to="/tab1" />} exact={true} />
+          <Route path="/apply" component={ApplyPage} exact />
+          <Route path="/" render={() => <Redirect to="/color" />} exact={true} />
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
           <IonTabButton tab="color" href="/color">
@@ -46,9 +48,13 @@ const App: React.FC = () => (
             <IonIcon icon={flowerOutline} />
             <IonLabel>Pattern</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="text" href="/text">
+          {/* <IonTabButton tab="text" href="/text">
             <IonIcon icon={textOutline} />
             <IonLabel>Text</IonLabel>
+          </IonTabButton> */}
+          <IonTabButton tab="apply" href="/apply">
+            <IonIcon icon={downloadOutline} />
+            <IonLabel>Apply</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>

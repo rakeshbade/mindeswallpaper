@@ -20,12 +20,12 @@ const ColorPage: React.FC = () => {
             <PreviewComponent />
         </IonContent>
         <IonContent>
-            <IonGrid>
+            {/* <IonGrid>
                 <IonRow className="ion-justify-content-between">
                     <IonCol className="ion-text-start">Colors</IonCol>
                     <IonCol className="ion-text-end">ion-col</IonCol>
                 </IonRow>
-            </IonGrid>
+            </IonGrid> */}
             {
                 colorCollection.length > 0 ? <GridLayoutComponent items={colorCollection}  type="color" /> : ""
             }

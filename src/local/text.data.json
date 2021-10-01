@@ -1,0 +1,103 @@
+{
+    "themes": [
+        {
+            "name": "left-top",
+            "id": "left-top",
+            "swatches": [
+                {
+                    "name": "left-top",
+                    "mode": "top",
+                    "value": "left-top"
+                }
+            ]
+        },
+        {
+            "name": "center-top",
+            "id": "center-top",
+            "swatches": [
+                {
+                    "name": "center-top",
+                    "mode": "top",
+                    "value": "center-top"
+                }
+            ]
+        },
+        {
+            "name": "right-top",
+            "id": "right-top",
+            "swatches": [
+                {
+                    "name": "right-top",
+                    "mode": "top",
+                    "value": "right-top"
+                }
+            ]
+        },
+        {
+            "name": "left-center",
+            "id": "left-center",
+            "swatches": [
+                {
+                    "name": "left-center",
+                    "mode": "center",
+                    "value": "left-center"
+                }
+            ]
+        },
+        {
+            "name": "center-center",
+            "id": "center-center",
+            "swatches": [
+                {
+                    "name": "center-center",
+                    "mode": "center",
+                    "value": "center-center"
+                }
+            ]
+        },
+        {
+            "name": "right-center",
+            "id": "right-center",
+            "swatches": [
+                {
+                    "name": "right-center",
+                    "mode": "center",
+                    "value": "right-center"
+                }
+            ]
+        },
+        {
+            "name": "left-bottom",
+            "id": "left-bottom",
+            "swatches": [
+                {
+                    "name": "left-bottom",
+                    "mode": "bottom",
+                    "value": "left-bottom"
+                }
+            ]
+        },
+        {
+            "name": "center-bottom",
+            "id": "center-bottom",
+            "swatches": [
+                {
+                    "name": "center-bottom",
+                    "mode": "bottom",
+                    "value": "center-bottom"
+                }
+            ]
+        },
+        {
+            "name": "right-bottom",
+            "id": "right-bottom",
+            "swatches": [
+                {
+                    "name": "right-bottom",
+                    "mode": "bottom",
+                    "value": "right-bottom"
+                }
+            ]
+        }
+    ]
+}

@@ -54,7 +54,7 @@ export default function App() {
   }, [])
   return (
     <IonApp>
-    <IonReactRouter basename='/mindeswallpaper'>
+    <IonReactRouter basename={process.env.BASEPATH}>
       <IonTabs>
         <IonRouterOutlet>
           <Route path="/tabs/:tab(home)" component={HomePage} exact />

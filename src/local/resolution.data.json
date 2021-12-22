@@ -1,0 +1,114 @@
+[
+    {
+      "Device": "iPhone 2G/3G/3GS",
+      "Resolution": "320 x 480"
+    },
+    {
+      "Device": "iPhone 4/4S",
+      "Resolution": "640 x 960"
+    },
+    {
+      "Device": "iPhone 5/5C/5S",
+      "Resolution": "640 x 1136"
+    },
+    {
+      "Device": "iPhone SE",
+      "Resolution": "640 x 1136"
+    },
+    {
+      "Device": "iPhone 6/6S/7/8/SE2",
+      "Resolution": "750 x 1334"
+    },
+    {
+      "Device": "iPhone 6+/6S+/7+/8+",
+      "Resolution": "1242 x 2208"
+    },
+    {
+      "Device": "iPhone Xr/11",
+      "Resolution": "828 x 1792"
+    },
+    {
+      "Device": "iPhone X/Xs/11 Pro",
+      "Resolution": "1125 x 2436"
+    },
+    {
+      "Device": "iPhone Xs Max/11 Pro Max",
+      "Resolution": "1242 x 2688"
+    },
+    {
+      "Device": "iPhone 12/12 Pro/13/13 Pro",
+      "Resolution": "1170 x 2532"
+    },
+    {
+      "Device": "iPhone 12 Pro Max/13 Pro Max",
+      "Resolution": "1284 x 2778"
+    },
+    {
+      "Device": "iPhone 13 Mini",
+      "Resolution": "1080 x 2540"
+    },
+    {
+      "Device": "Galaxy S",
+      "Resolution": "480 x 800"
+    },
+    {
+      "Device": "Galaxy S2",
+      "Resolution": "480 x 800"
+    },
+    {
+      "Device": "Galaxy S3",
+      "Resolution": "720 x 1280"
+    },
+    {
+      "Device": "Galaxy S3 Mini",
+      "Resolution": "480 x 1200"
+    },
+    {
+      "Device": "Galaxy S4",
+      "Resolution": "1080 x 1920"
+    },
+    {
+      "Device": "Galaxy S5",
+      "Resolution": "1080 x 1920"
+    },
+    {
+      "Device": "Galaxy S6/Edge",
+      "Resolution": "1440 x 2560"
+    },
+    {
+      "Device": "Galaxy S7",
+      "Resolution": "1440 x 2560"
+    },
+    {
+      "Device": "Galaxy S7 Edge",
+      "Resolution": "1440 x 2560"
+    },
+    {
+      "Device": "Galaxy S8",
+      "Resolution": "1440 x 2960"
+    },
+    {
+      "Device": "Galaxy S8 Plus",
+      "Resolution": "1440 x 2960"
+    },
+    {
+      "Device": "Galaxy S9",
+      "Resolution": "1440 x 2960"
+    },
+    {
+      "Device": "Galaxy S9 Plus",
+      "Resolution": "1440 x 2960"
+    },
+    {
+      "Device": "iPad Mini Retina",
+      "Resolution": "2048 x 1536"
+    },
+    {
+      "Device": "iPad Air",
+      "Resolution": "2048 x 1536"
+    },
+    {
+        "Device": "Other",
+        "Resolution": "2048 x 1536"
+    }
+]

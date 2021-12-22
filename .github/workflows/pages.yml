@@ -23,7 +23,7 @@ jobs:
         run: |
           npm run-script build
       - name: Deploy
-        uses: rakeshbade/github-pages-deploy-action@3.6.2
+        uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
           GITHUB_TOKEN: ${{ secrets.PUB_PAGES }}
           BRANCH: gh-pages

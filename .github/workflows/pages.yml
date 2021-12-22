@@ -16,8 +16,8 @@ jobs:
         run: |
           npm install
       - name: Run Tests
-        run: |
-          npm run-script test
+        # run: |
+        #   npm run-script test
         
       - name: Build Package
         run: |

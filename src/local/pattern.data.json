@@ -1,320 +1,292 @@
 {
     "themes": [
         {
-            "name": "pattern-checks",
-            "id": "pattern-checks",
-            "swatches": [
-                {
-                    "name": "pattern-checks-sm",
-                    "mode": "small",
-                    "value": ".pattern-checks-sm"
-                },
-                {
-                    "name": "pattern-checks-md",
-                    "mode": "medium",
-                    "value": ".pattern-checks-md"
-                },
-                {
-                    "name": "pattern-checks-lg",
-                    "mode": "large",
-                    "value": ".pattern-checks-lg"
-                },
-                {
-                    "name": "pattern-checks-xl",
-                    "mode": "extralarge",
-                    "value": ".pattern-checks-xl"
-                }
-            ]
+            "name": "pattern-checks-sm",
+            "mode": "small",
+            "value": ".pattern-checks-sm",
+            "id": "pattern-checks-sm"
         },
         {
-            "name": "pattern-grid",
-            "id": "pattern-grid",
-            "swatches": [
-                {
-                    "name": "pattern-grid-sm",
-                    "mode": "small",
-                    "value": ".pattern-grid-sm"
-                },
-                {
-                    "name": "pattern-grid-md",
-                    "mode": "medium",
-                    "value": ".pattern-grid-md"
-                },
-                {
-                    "name": "pattern-grid-lg",
-                    "mode": "large",
-                    "value": ".pattern-grid-lg"
-                },
-                {
-                    "name": "pattern-grid-xl",
-                    "mode": "extralarge",
-                    "value": ".pattern-grid-xl"
-                }
-            ]
+            "name": "pattern-checks-md",
+            "mode": "medium",
+            "value": ".pattern-checks-md",
+            "id": "pattern-checks-md"
         },
         {
-            "name": "pattern-dots",
-            "id": "pattern-dots",
-            "swatches": [
-                {
-                    "name": "pattern-dots-sm",
-                    "mode": "small",
-                    "value": ".pattern-dots-sm"
-                },
-                {
-                    "name": "pattern-dots-md",
-                    "mode": "medium",
-                    "value": ".pattern-dots-md"
-                },
-                {
-                    "name": "pattern-dots-lg",
-                    "mode": "large",
-                    "value": ".pattern-dots-lg"
-                },
-                {
-                    "name": "pattern-dots-xl",
-                    "mode": "extralarge",
-                    "value": ".pattern-dots-xl"
-                }
-            ]
+            "name": "pattern-checks-lg",
+            "mode": "large",
+            "value": ".pattern-checks-lg",
+            "id": "pattern-checks-lg"
         },
         {
-            "name": "pattern-cross-dots",
-            "id": "pattern-cross-dots",
-            "swatches": [
-                {
-                    "name": "pattern-cross-dots-sm",
-                    "mode": "small",
-                    "value": ".pattern-cross-dots-sm"
-                },
-                {
-                    "name": "pattern-cross-dots-md",
-                    "mode": "medium",
-                    "value": ".pattern-cross-dots-md"
-                },
-                {
-                    "name": "pattern-cross-dots-lg",
-                    "mode": "large",
-                    "value": ".pattern-cross-dots-lg"
-                },
-                {
-                    "name": "pattern-cross-dots-xl",
-                    "mode": "extralarge",
-                    "value": ".pattern-cross-dots-xl"
-                }
-            ]
+            "name": "pattern-checks-xl",
+            "mode": "extralarge",
+            "value": ".pattern-checks-xl",
+            "id": "pattern-checks-xl"
         },
         {
-            "name": "pattern-diagonal-lines",
-            "id": "pattern-diagonal-lines",
-            "swatches": [
-                {
-                    "name": "pattern-diagonal-lines-sm",
-                    "mode": "small",
-                    "value": ".pattern-diagonal-lines-sm"
-                },
-                {
-                    "name": "pattern-diagonal-lines-md",
-                    "mode": "medium",
-                    "value": ".pattern-diagonal-lines-md"
-                },
-                {
-                    "name": "pattern-diagonal-lines-lg",
-                    "mode": "large",
-                    "value": ".pattern-diagonal-lines-lg"
-                },
-                {
-                    "name": "pattern-diagonal-lines-xl",
-                    "mode": "extralarge",
-                    "value": ".pattern-diagonal-lines-xl"
-                }
-            ]
+            "name": "pattern-grid-sm",
+            "mode": "small",
+            "value": ".pattern-grid-sm",
+            "id": "pattern-grid-sm"
         },
         {
-            "name": "pattern-vertical-lines",
-            "id": "pattern-vertical-lines",
-            "swatches": [
-                {
-                    "name": "pattern-vertical-lines-sm",
-                    "mode": "small",
-                    "value": ".pattern-vertical-lines-sm"
-                },
-                {
-                    "name": "pattern-vertical-lines-md",
-                    "mode": "medium",
-                    "value": ".pattern-vertical-lines-md"
-                },
-                {
-                    "name": "pattern-vertical-lines-lg",
-                    "mode": "large",
-                    "value": ".pattern-vertical-lines-lg"
-                },
-                {
-                    "name": "pattern-vertical-lines-xl",
-                    "mode": "extralarge",
-                    "value": ".pattern-vertical-lines-xl"
-                }
-            ]
+            "name": "pattern-grid-md",
+            "mode": "medium",
+            "value": ".pattern-grid-md",
+            "id": "pattern-grid-md"
         },
         {
-            "name": "pattern-horizontal-lines",
-            "id": "pattern-horizontal-lines",
-            "swatches": [
-                {
-                    "name": "pattern-horizontal-lines-sm",
-                    "mode": "small",
-                    "value": ".pattern-horizontal-lines-sm"
-                },
-                {
-                    "name": "pattern-horizontal-lines-md",
-                    "mode": "medium",
-                    "value": ".pattern-horizontal-lines-md"
-                },
-                {
-                    "name": "pattern-horizontal-lines-lg",
-                    "mode": "large",
-                    "value": ".pattern-horizontal-lines-lg"
-                },
-                {
-                    "name": "pattern-horizontal-lines-xl",
-                    "mode": "extralarge",
-                    "value": ".pattern-horizontal-lines-xl"
-                }
-            ]
+            "name": "pattern-grid-lg",
+            "mode": "large",
+            "value": ".pattern-grid-lg",
+            "id": "pattern-grid-lg"
         },
         {
-            "name": "pattern-diagonal-stripes",
-            "id": "pattern-diagonal-stripes",
-            "swatches": [
-                {
-                    "name": "pattern-diagonal-stripes-sm",
-                    "mode": "small",
-                    "value": ".pattern-diagonal-stripes-sm"
-                },
-                {
-                    "name": "pattern-diagonal-stripes-md",
-                    "mode": "medium",
-                    "value": ".pattern-diagonal-stripes-md"
-                },
-                {
-                    "name": "pattern-diagonal-stripes-lg",
-                    "mode": "large",
-                    "value": ".pattern-diagonal-stripes-lg"
-                },
-                {
-                    "name": "pattern-diagonal-stripes-xl",
-                    "mode": "extralarge",
-                    "value": ".pattern-diagonal-stripes-xl"
-                }
-            ]
+            "name": "pattern-grid-xl",
+            "mode": "extralarge",
+            "value": ".pattern-grid-xl",
+            "id": "pattern-grid-xl"
         },
         {
-            "name": "pattern-vertical-stripes",
-            "id": "pattern-vertical-stripes",
-            "swatches": [
-                {
-                    "name": "pattern-vertical-stripes-sm",
-                    "mode": "small",
-                    "value": ".pattern-vertical-stripes-sm"
-                },
-                {
-                    "name": "pattern-vertical-stripes-md",
-                    "mode": "medium",
-                    "value": ".pattern-vertical-stripes-md"
-                },
-                {
-                    "name": "pattern-vertical-stripes-lg",
-                    "mode": "large",
-                    "value": ".pattern-vertical-stripes-lg"
-                },
-                {
-                    "name": "pattern-vertical-stripes-xl",
-                    "mode": "extralarge",
-                    "value": ".pattern-vertical-stripes-xl"
-                }
-            ]
+            "name": "pattern-dots-sm",
+            "mode": "small",
+            "value": ".pattern-dots-sm",
+            "id": "pattern-dots-sm"
         },
         {
-            "name": "pattern-horizontal-stripes",
-            "id": "pattern-horizontal-stripes",
-            "swatches": [
-                {
-                    "name": "pattern-horizontal-stripes-sm",
-                    "mode": "small",
-                    "value": ".pattern-horizontal-stripes-sm"
-                },
-                {
-                    "name": "pattern-horizontal-stripes-md",
-                    "mode": "medium",
-                    "value": ".pattern-horizontal-stripes-md"
-                },
-                {
-                    "name": "pattern-horizontal-stripes-lg",
-                    "mode": "large",
-                    "value": ".pattern-horizontal-stripes-lg"
-                },
-                {
-                    "name": "pattern-horizontal-stripes-xl",
-                    "mode": "extralarge",
-                    "value": ".pattern-horizontal-stripes-xl"
-                }
-            ]
+            "name": "pattern-dots-md",
+            "mode": "medium",
+            "value": ".pattern-dots-md",
+            "id": "pattern-dots-md"
         },
         {
-            "name": "pattern-triangles",
-            "id": "pattern-triangles",
-            "swatches": [
-                {
-                    "name": "pattern-triangles-sm",
-                    "mode": "small",
-                    "value": ".pattern-triangles-sm"
-                },
-                {
-                    "name": "pattern-triangles-md",
-                    "mode": "medium",
-                    "value": ".pattern-triangles-md"
-                },
-                {
-                    "name": "pattern-triangles-lg",
-                    "mode": "large",
-                    "value": ".pattern-triangles-lg"
-                },
-                {
-                    "name": "pattern-triangles-xl",
-                    "mode": "extralarge",
-                    "value": ".pattern-triangles-xl"
-                }
-            ]
+            "name": "pattern-dots-lg",
+            "mode": "large",
+            "value": ".pattern-dots-lg",
+            "id": "pattern-dots-lg"
         },
         {
-            "name":"pattern-zigzag",
-            "id": "pattern-zigzag",
-            "swatches":[
-                {
-                    "name": "pattern-zigzag-sm",
-                    "mode": "small",
-                    "value": ".pattern-zigzag-sm"
-    
-                },
-                {
-                    "name": "pattern-zigzag-md",
-                    "mode": "medium",
-                    "value": ".pattern-zigzag-md"
-    
-                },
-                {
-                    "name": "pattern-zigzag-lg",
-                    "mode": "large",
-                    "value": ".pattern-zigzag-lg"
-    
-                },
-                {
-                    "name": "pattern-zigzag-xl",
-                    "mode": "extralarge",
-                    "value": ".pattern-zigzag-xl"
-    
-                }
-            ]
+            "name": "pattern-dots-xl",
+            "mode": "extralarge",
+            "value": ".pattern-dots-xl",
+            "id": "pattern-dots-xl"
+        },
+        {
+            "name": "pattern-cross-dots-sm",
+            "mode": "small",
+            "value": ".pattern-cross-dots-sm",
+            "id": "pattern-cross-dots-sm"
+        },
+        {
+            "name": "pattern-cross-dots-md",
+            "mode": "medium",
+            "value": ".pattern-cross-dots-md",
+            "id": "pattern-cross-dots-md"
+        },
+        {
+            "name": "pattern-cross-dots-lg",
+            "mode": "large",
+            "value": ".pattern-cross-dots-lg",
+            "id": "pattern-cross-dots-lg"
+        },
+        {
+            "name": "pattern-cross-dots-xl",
+            "mode": "extralarge",
+            "value": ".pattern-cross-dots-xl",
+            "id": "pattern-cross-dots-xl"
+        },
+        {
+            "name": "pattern-diagonal-lines-sm",
+            "mode": "small",
+            "value": ".pattern-diagonal-lines-sm",
+            "id": "pattern-diagonal-lines-sm"
+        },
+        {
+            "name": "pattern-diagonal-lines-md",
+            "mode": "medium",
+            "value": ".pattern-diagonal-lines-md",
+            "id": "pattern-diagonal-lines-md"
+        },
+        {
+            "name": "pattern-diagonal-lines-lg",
+            "mode": "large",
+            "value": ".pattern-diagonal-lines-lg",
+            "id": "pattern-diagonal-lines-lg"
+        },
+        {
+            "name": "pattern-diagonal-lines-xl",
+            "mode": "extralarge",
+            "value": ".pattern-diagonal-lines-xl",
+            "id": "pattern-diagonal-lines-xl"
+        },
+        {
+            "name": "pattern-vertical-lines-sm",
+            "mode": "small",
+            "value": ".pattern-vertical-lines-sm",
+            "id": "pattern-vertical-lines-sm"
+        },
+        {
+            "name": "pattern-vertical-lines-md",
+            "mode": "medium",
+            "value": ".pattern-vertical-lines-md",
+            "id": "pattern-vertical-lines-md"
+        },
+        {
+            "name": "pattern-vertical-lines-lg",
+            "mode": "large",
+            "value": ".pattern-vertical-lines-lg",
+            "id": "pattern-vertical-lines-lg"
+        },
+        {
+            "name": "pattern-vertical-lines-xl",
+            "mode": "extralarge",
+            "value": ".pattern-vertical-lines-xl",
+            "id": "pattern-vertical-lines-xl"
+        },
+        {
+            "name": "pattern-horizontal-lines-sm",
+            "mode": "small",
+            "value": ".pattern-horizontal-lines-sm",
+            "id": "pattern-horizontal-lines-sm"
+        },
+        {
+            "name": "pattern-horizontal-lines-md",
+            "mode": "medium",
+            "value": ".pattern-horizontal-lines-md",
+            "id": "pattern-horizontal-lines-md"
+        },
+        {
+            "name": "pattern-horizontal-lines-lg",
+            "mode": "large",
+            "value": ".pattern-horizontal-lines-lg",
+            "id": "pattern-horizontal-lines-lg"
+        },
+        {
+            "name": "pattern-horizontal-lines-xl",
+            "mode": "extralarge",
+            "value": ".pattern-horizontal-lines-xl",
+            "id": "pattern-horizontal-lines-xl"
+        },
+        {
+            "name": "pattern-diagonal-stripes-sm",
+            "mode": "small",
+            "value": ".pattern-diagonal-stripes-sm",
+            "id": "pattern-diagonal-stripes-sm"
+        },
+        {
+            "name": "pattern-diagonal-stripes-md",
+            "mode": "medium",
+            "value": ".pattern-diagonal-stripes-md",
+            "id": "pattern-diagonal-stripes-md"
+        },
+        {
+            "name": "pattern-diagonal-stripes-lg",
+            "mode": "large",
+            "value": ".pattern-diagonal-stripes-lg",
+            "id": "pattern-diagonal-stripes-lg"
+        },
+        {
+            "name": "pattern-diagonal-stripes-xl",
+            "mode": "extralarge",
+            "value": ".pattern-diagonal-stripes-xl",
+            "id": "pattern-diagonal-stripes-xl"
+        },
+        {
+            "name": "pattern-vertical-stripes-sm",
+            "mode": "small",
+            "value": ".pattern-vertical-stripes-sm",
+            "id": "pattern-vertical-stripes-sm"
+        },
+        {
+            "name": "pattern-vertical-stripes-md",
+            "mode": "medium",
+            "value": ".pattern-vertical-stripes-md",
+            "id": "pattern-vertical-stripes-md"
+        },
+        {
+            "name": "pattern-vertical-stripes-lg",
+            "mode": "large",
+            "value": ".pattern-vertical-stripes-lg",
+            "id": "pattern-vertical-stripes-lg"
+        },
+        {
+            "name": "pattern-vertical-stripes-xl",
+            "mode": "extralarge",
+            "value": ".pattern-vertical-stripes-xl",
+            "id": "pattern-vertical-stripes-xl"
+        },
+        {
+            "name": "pattern-horizontal-stripes-sm",
+            "mode": "small",
+            "value": ".pattern-horizontal-stripes-sm",
+            "id": "pattern-horizontal-stripes-sm"
+        },
+        {
+            "name": "pattern-horizontal-stripes-md",
+            "mode": "medium",
+            "value": ".pattern-horizontal-stripes-md",
+            "id": "pattern-horizontal-stripes-md"
+        },
+        {
+            "name": "pattern-horizontal-stripes-lg",
+            "mode": "large",
+            "value": ".pattern-horizontal-stripes-lg",
+            "id": "pattern-horizontal-stripes-lg"
+        },
+        {
+            "name": "pattern-horizontal-stripes-xl",
+            "mode": "extralarge",
+            "value": ".pattern-horizontal-stripes-xl",
+            "id": "pattern-horizontal-stripes-xl"
+        },
+        {
+            "name": "pattern-triangles-sm",
+            "mode": "small",
+            "value": ".pattern-triangles-sm",
+            "id": "pattern-triangles-sm"
+        },
+        {
+            "name": "pattern-triangles-md",
+            "mode": "medium",
+            "value": ".pattern-triangles-md",
+            "id": "pattern-triangles-md"
+        },
+        {
+            "name": "pattern-triangles-lg",
+            "mode": "large",
+            "value": ".pattern-triangles-lg",
+            "id": "pattern-triangles-lg"
+        },
+        {
+            "name": "pattern-triangles-xl",
+            "mode": "extralarge",
+            "value": ".pattern-triangles-xl",
+            "id": "pattern-triangles-xl"
+        },
+        {
+            "name": "pattern-zigzag-sm",
+            "mode": "small",
+            "value": ".pattern-zigzag-sm",
+            "id": "pattern-zigzag-sm"
+        },
+        {
+            "name": "pattern-zigzag-md",
+            "mode": "medium",
+            "value": ".pattern-zigzag-md",
+            "id": "pattern-zigzag-md"
+        },
+        {
+            "name": "pattern-zigzag-lg",
+            "mode": "large",
+            "value": ".pattern-zigzag-lg",
+            "id": "pattern-zigzag-lg"
+        },
+        {
+            "name": "pattern-zigzag-xl",
+            "mode": "extralarge",
+            "value": ".pattern-zigzag-xl",
+            "id": "pattern-zigzag-xl"
         }
     ]
 }

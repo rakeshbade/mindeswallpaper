@@ -1,19 +1,21 @@
 import React, { useEffect, useState } from 'react'
-import { IonCol, IonContent, IonGrid, IonPage, IonRow } from '@ionic/react';
+import { IonContent, IonPage } from '@ionic/react';
 import TitleComponent from "./../../components/title.component"
 import PreviewComponent from "./../../components/preview.component"
 import GridLayoutComponent from '../../components/grid.layout.component';
-import * as PatternThemes from "./../../local/pattern.data.json"
+import PatternModel from '../../models/pattern.model';
+import { TypeConstants } from '../../constants';
 
-const PatternPage: React.FC = () => {
-    const [patternCollection, setPatternCollection] = useState<Array<any>>([])
+const PatternPage = (props: {patternCollection:Array<any>}) => {
+    const [patternCollection, setPatternCollection] = useState<Array<PatternModel>>([]);
     useEffect(() => {
-        const patterns = PatternThemes.themes;
+        const patterns = props.patternCollection;
         setPatternCollection(patterns);
         return () => {
 
         }
-    }, []);
+    }, [patternCollection]);
+
     return (<IonPage id="pattern">
         <TitleComponent title="Pattern" />
         <IonContent>
@@ -26,7 +28,7 @@ const PatternPage: React.FC = () => {
                     <IonCol className="ion-text-end">ion-col</IonCol>
                 </IonRow>
             </IonGrid> */}
-            { patternCollection.length > 0 ? <GridLayoutComponent items={patternCollection}  type="pattern" /> : "" }
+            { patternCollection.length > 0 ? <GridLayoutComponent items={patternCollection}  type={TypeConstants.pattern} /> : "" }
         </IonContent>
     </IonPage>)
 };

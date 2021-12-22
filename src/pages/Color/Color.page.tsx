@@ -1,18 +1,19 @@
-import { IonCol, IonContent, IonGrid, IonPage, IonRow } from '@ionic/react';
+import { IonCol, IonContent, IonPage } from '@ionic/react';
 import TitleComponent from "./../../components/title.component";
 import PreviewComponent from "../../components/preview.component";
 import GridLayoutComponent from "../../components/grid.layout.component"
 import React, { useEffect, useState } from 'react'
-import * as ColorThemes from "./../../local/color.data.json"
-const ColorPage: React.FC = () => {
-    const [colorCollection, setColorCollection] = useState<Array<any>>([])
+import { TypeConstants } from '../../constants';
+
+const ColorPage = (props: {colorCollection:Array<any>}) => {
+    const [colorCollection, setColorCollection] = useState<Array<any>>([]);
     useEffect(() => {
-        const colors = ColorThemes.themes;
+        const colors = props.colorCollection;
         setColorCollection(colors);
         return () => {
 
         }
-    }, []);
+    },[colorCollection]);
 
     return (<IonPage id="color">
         <TitleComponent title="Color" />
@@ -27,7 +28,7 @@ const ColorPage: React.FC = () => {
                 </IonRow>
             </IonGrid> */}
             {
-                colorCollection.length > 0 ? <GridLayoutComponent items={colorCollection}  type="color" /> : ""
+                colorCollection.length > 0 ? <GridLayoutComponent items={colorCollection}  type={TypeConstants.color} /> : ""
             }
         </IonContent>
     </IonPage>)

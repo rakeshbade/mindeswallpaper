@@ -1,3 +1,7 @@
+ul, ul li{
+    margin: 0px;
+    padding: 0px;
+}
 .header-title{
     text-align: center;
 }
@@ -12,8 +16,35 @@
     height: 100%;
 }
 
-.slides .slide-image{
+.slides .slide-item{
     height: 100%;
+    width: min(250px, 80%);
+    transition:all .5s;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides .slide-item::before{
+    content: '';
+    z-index: 1;
+    position: absolute;
+    width: 98%;
+    height: 100%;
+    left:1%;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+.iphone .slide-item::before{
+    background-image: url("./../assets/images/iphone-screen.png");
+}
+.android .slide-item::before{
+    background-image: url("./../assets/images/android-screen.png");
+}
+.background-item{
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease-in-out;
 }
 
 .grid-container{
@@ -24,21 +55,53 @@
 }
 
 .grid-container .grid-item{
-    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .25s;
+    border: 1px solid transparent;
+    cursor: pointer;
+    overflow: hidden;
 }
 
-.color-grid-content, .pattern-grid-content{
+.grid-item.active{
+    box-shadow:0px 0px 8px rgba(0,0,0,.5);
+    opacity: .7;
+    border-radius: 1rem;
+    transform: scale(90%);
+}
+
+.grid-content{
     display: flex;
     width: 100%;
     height: 100%;
     border-radius: .5rem;
     list-style: none;
 }
-.color-grid-content li, .pattern-grid-content li{
-    height: 100%;
+.grid-content li{
+   height: 100%;
    flex-grow: 1;
    list-style: none;
+}
+
+.download-btn{
+    margin-top: 1em;
+}
+
+@media  (max-width:768px) {
+    .grid-container .grid-item{
+        height: 50px;
+    }
+}
+
+@media (min-width:768px) and (max-width:960px) {
+    .grid-container .grid-item{
+        height: 100px;
+    }
+}
+
+@media (min-width:960px) {
+    .grid-container .grid-item{
+        height: 150px;
+    }
 }

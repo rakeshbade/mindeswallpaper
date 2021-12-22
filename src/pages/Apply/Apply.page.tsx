@@ -13,12 +13,7 @@ const ApplyPage: React.FC = () => {
             <PreviewCompoment />
         </IonContent>
         <IonContent>
-            {/* <IonGrid>
-                <IonRow className="ion-justify-content-between">
-                    <IonCol className="ion-text-start">Scale</IonCol>
-                    <IonCol className="ion-text-end">ion-col</IonCol>
-                </IonRow>
-            </IonGrid> */}
+            <ApplyComponent />
         </IonContent>
     </IonPage>)
 };

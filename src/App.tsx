@@ -26,15 +26,40 @@ import ColorPage from "./pages/Color/Color.page";
 import PatternPage from "./pages/Pattern/Pattern.page";
 import TextPage from "./pages/Text/Text.page";
 import ApplyPage from './pages/Apply/Apply.page';
+import { useEffect, useState } from 'react';
+import * as ColorThemes from "./local/color.data.json";
+import * as PatternThemes from "./local/pattern.data.json";
+import { useDispatch } from 'react-redux';
 
-const App: React.FC = () => (
-  <IonApp>
+export default function App() {
+  const [loader, setLoader] = useState(true);
+  const [colorCollection, setcolorCollection] = useState<Array<any>>([]);
+  const [patternCollection, setpatternCollection] = useState<Array<any>>([]);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    // const colorCollectionReq = fetch("./src/local/color.data.json").then(res=>res.json());
+    // const patternCollectionReq = fetch("./src/local/pattern.data.json").then(res=>res.json());
+    // Promise.all([colorCollectionReq, patternCollectionReq]).then(([colorCollectionRes, patternCollectionRes])=>{
+    //   console.log(colorCollectionRes, patternCollectionRes);
+    // })
+    setcolorCollection(ColorThemes.themes);
+    setpatternCollection(PatternThemes.themes);
+    const defaultPattern = {...PatternThemes.themes[0]};
+    const defaultColor= {...ColorThemes.themes[0]};
+    dispatch({type:"color", value: defaultColor});
+    dispatch({type:"pattern", value: defaultPattern});
+    setLoader(false);
+    return () => {
+    }
+  }, [])
+  return (
+    <IonApp>
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
           <Route path="/tabs/:tab(home)" component={HomePage} exact />
-          <Route path="/color" component={ColorPage} exact />
-          <Route path="/pattern" component={PatternPage} exact />
+          <Route path="/color" render={(props)=>(<ColorPage {...props} colorCollection={colorCollection} />)} exact  />
+          <Route path="/pattern" render={(props)=>(<PatternPage {...props} patternCollection={patternCollection} />)} exact />
           <Route path="/text" component={TextPage} exact />
           <Route path="/apply" component={ApplyPage} exact />
           <Route path="/" render={() => <Redirect to="/color" />} exact={true} />
@@ -60,6 +85,5 @@ const App: React.FC = () => (
       </IonTabs>
     </IonReactRouter>
   </IonApp>
-);
-
-export default App;
+  )
+}

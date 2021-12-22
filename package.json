@@ -1,6 +1,7 @@
 {
   "name": "MinDesWallpaper",
   "version": "0.0.1",
+  "homepage": "https://rakeshbade.github.io/mindeswallpaper/",
   "private": true,
   "dependencies": {
     "@capacitor/android": "3.2.0",

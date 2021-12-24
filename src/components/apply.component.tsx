@@ -40,7 +40,7 @@ function ApplyComponent() {
                     backgroundColor: selectedColor.background || '',
                 });
                 var link = document.createElement('a');
-                link.download = `${document.title}-${selectedPattern.name}`;
+                link.download = `${document.title}-${selectedPattern.name}.jpg`;
                 link.href = dataUrl;
                 link.click();
     

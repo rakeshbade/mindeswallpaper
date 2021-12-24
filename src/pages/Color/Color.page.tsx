@@ -1,7 +1,7 @@
-import { IonCol, IonContent, IonPage } from '@ionic/react';
+import { IonContent, IonPage } from '@ionic/react';
 import TitleComponent from "./../../components/title.component";
-import PreviewComponent from "../../components/preview.component";
-import GridLayoutComponent from "../../components/grid.layout.component"
+import PreviewComponent from "../../components/preview/preview.component";
+import GridLayoutComponent from './../../components/grid.layout/grid.layout.component';
 import React, { useEffect, useState } from 'react'
 import { TypeConstants } from '../../constants';
 
@@ -19,14 +19,6 @@ const ColorPage = (props: {colorCollection:Array<any>}) => {
         <TitleComponent title="Color" />
         <IonContent>
             <PreviewComponent />
-        </IonContent>
-        <IonContent>
-            {/* <IonGrid>
-                <IonRow className="ion-justify-content-between">
-                    <IonCol className="ion-text-start">Colors</IonCol>
-                    <IonCol className="ion-text-end">ion-col</IonCol>
-                </IonRow>
-            </IonGrid> */}
             {
                 colorCollection.length > 0 ? <GridLayoutComponent items={colorCollection}  type={TypeConstants.color} /> : ""
             }

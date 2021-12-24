@@ -1,5 +1,5 @@
 import { IonApp, IonIcon, IonLabel, IonRouterOutlet, IonTabBar, IonTabButton, IonTabs } from '@ionic/react';
-import { IonReactRouter } from '@ionic/react-router';
+import { IonReactHashRouter } from '@ionic/react-router';
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
 
@@ -52,12 +52,13 @@ export default function App() {
     return () => {
     }
   }, [])
+
   return (
     <IonApp>
-    <IonReactRouter basename={process.env.BASEPATH}>
+    <IonReactHashRouter basename="/">
       <IonTabs>
         <IonRouterOutlet>
-          <Route path="/tabs/:tab(home)" component={HomePage} exact />
+          <Route path="/home" component={HomePage} exact />
           <Route path="/color" render={(props)=>(<ColorPage {...props} colorCollection={colorCollection} />)} exact  />
           <Route path="/pattern" render={(props)=>(<PatternPage {...props} patternCollection={patternCollection} />)} exact />
           <Route path="/text" component={TextPage} exact />
@@ -79,11 +80,11 @@ export default function App() {
           </IonTabButton> */}
           <IonTabButton tab="apply" href="/apply">
             <IonIcon icon={downloadOutline} />
-            <IonLabel>Apply</IonLabel>
+            <IonLabel>Save</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>
-    </IonReactRouter>
+    </IonReactHashRouter>
   </IonApp>
   )
 }

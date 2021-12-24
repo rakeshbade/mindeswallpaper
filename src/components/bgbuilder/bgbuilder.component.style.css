@@ -1,0 +1,68 @@
+.background-item, .preview-wrapper{
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease-in-out;
+    border-radius: 8px;
+}
+.preview-wrapper::before{
+        content: '';
+        z-index: 1;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background:transparent;
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position:center;
+}
+.ios.preview-wrapper::before{
+    animation-name: animatedBackground;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    background-image: url("../../assets/images/iphone-screen.png");
+}
+.android.preview-wrapper::before{
+    animation-name: animatedBackground;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    background-image: url("../../assets/images/android-screen.png");
+}
+@keyframes animatedBackground {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+/* .slides .slide-item{
+    height: 100%;
+    width: min(250px, 80%);
+    transition:all .5s;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides .slide-item::before{
+    content: '';
+    z-index: 1;
+    position: absolute;
+    width: 98%;
+    height: 100%;
+    left:1%;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+.iphone .slide-item::before{
+    background-image: url("../../assets/images/iphone-screen.png");
+}
+.android .slide-item::before{
+    background-image: url("../../assets/images/android-screen.png");
+}
+.background-item, .slide-item{
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease-in-out;
+    border-radius: 8px;
+} */

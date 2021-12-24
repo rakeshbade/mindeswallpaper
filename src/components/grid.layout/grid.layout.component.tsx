@@ -1,9 +1,12 @@
-import React, { MouseEventHandler, useEffect, useState } from 'react'
+import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { createColorPalette } from '../services/color.service';
-import ColorComponent from "./color.component";
-import PatternComponent from './pattern.component'
-import { TypeConstants } from '../constants';
+import { createColorPalette } from '../../services/color.service';
+import ColorComponent from "../color/color.component";
+import PatternComponent from './../pattern.component'
+import { TypeConstants } from '../../constants';
+import "./grid.layout.component.style.css"
+import { IonIcon, IonRippleEffect } from '@ionic/react';
+import { checkmarkCircle } from 'ionicons/icons';
 const GridLayoutComponent = (props: { items: Array<any>, type: string }) => {
     const createPalette = createColorPalette;
     const dispatch = useDispatch();
@@ -27,12 +30,15 @@ const GridLayoutComponent = (props: { items: Array<any>, type: string }) => {
             {
 
                 props.items.map((item: any, i: number) => {
-                    let gridClass = "grid-item ";
-                    gridClass += (
-                        (selectedColor.id === item.id && props.type == TypeConstants.color) || 
-                        (selectedPattern.id === item.id && props.type == TypeConstants.pattern)
-                    ) ? "active" : "";
-                    return (<div className={gridClass} key={i} onClick={() => { dispatch({ type: props.type, value: item }) }}>
+                    const selectedItem = (selectedColor.id === item.id && props.type === TypeConstants.color) || 
+                    (selectedPattern.id === item.id && props.type === TypeConstants.pattern)
+                    let gridClass = "grid-item ion-activatable ripple-parent ";
+                    gridClass += selectedItem ? "active" : "";
+                    return (<div className={gridClass} key={i} onClick={() => { dispatch({ type: props.type, value: item }) }}> 
+                                <IonRippleEffect type="unbounded"></IonRippleEffect>
+                        {
+                            selectedItem ? (<IonIcon icon={checkmarkCircle} color="success" size="large" className="active-icon"></IonIcon>) :  ''
+                        }
                         {
                             renderLayout(item)
                         }

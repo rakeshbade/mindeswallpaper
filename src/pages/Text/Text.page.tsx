@@ -1,8 +1,8 @@
 import React from 'react'
 import { IonCol, IonContent, IonGrid, IonPage, IonRow } from '@ionic/react';
 import TitleComponent from "./../../components/title.component"
-import PreviewComponent from '../../components/preview.component';
-import GridLayoutComponent from '../../components/grid.layout.component';
+import PreviewComponent from '../../components/preview/preview.component';
+import GridLayoutComponent from './../../components/grid.layout/grid.layout.component';
 const TextPage: React.FC = () => (
     <IonPage id="text">
         <TitleComponent title="Text" />

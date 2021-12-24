@@ -38,20 +38,23 @@
    list-style: none;
 }
 @media  (max-width:768px) {
-    .grid-container .grid-item{
-        height: 50px;
+    .grid-container{
+        grid-template-columns: 1fr 1fr;
     }
-}
-
-@media (min-width:768px) and (max-width:960px) {
     .grid-container .grid-item{
         height: 100px;
     }
 }
 
-@media (min-width:960px) {
+@media (min-width:768px) and (max-width:960px) {
     .grid-container .grid-item{
         height: 150px;
+    }
+}
+
+@media (min-width:960px) {
+    .grid-container .grid-item{
+        height: 250px;
     }
 }
 @media (prefers-color-scheme: dark) {

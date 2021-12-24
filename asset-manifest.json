@@ -2,7 +2,7 @@
   "files": {
     "static/js/0.960bf798.chunk.js": "/mindeswallpaper/static/js/0.960bf798.chunk.js",
     "static/js/0.960bf798.chunk.js.map": "/mindeswallpaper/static/js/0.960bf798.chunk.js.map",
-    "main.css": "/mindeswallpaper/static/css/main.fc08e234.chunk.css",
+    "main.css": "/mindeswallpaper/static/css/main.b8e5cadd.chunk.css",
     "main.js": "/mindeswallpaper/static/js/main.0829534d.chunk.js",
     "main.js.map": "/mindeswallpaper/static/js/main.0829534d.chunk.js.map",
     "polyfills-dom.js": "/mindeswallpaper/static/js/polyfills-dom.2e11a8f2.chunk.js",
@@ -126,7 +126,7 @@
     "service-worker.js": "/mindeswallpaper/service-worker.js",
     "service-worker.js.map": "/mindeswallpaper/service-worker.js.map",
     "static/css/4.fb545c49.chunk.css.map": "/mindeswallpaper/static/css/4.fb545c49.chunk.css.map",
-    "static/css/main.fc08e234.chunk.css.map": "/mindeswallpaper/static/css/main.fc08e234.chunk.css.map",
+    "static/css/main.b8e5cadd.chunk.css.map": "/mindeswallpaper/static/css/main.b8e5cadd.chunk.css.map",
     "static/js/4.0607e983.chunk.js.LICENSE.txt": "/mindeswallpaper/static/js/4.0607e983.chunk.js.LICENSE.txt",
     "static/js/53.e10a93d6.chunk.js.LICENSE.txt": "/mindeswallpaper/static/js/53.e10a93d6.chunk.js.LICENSE.txt",
     "static/js/polyfills-dom.2e11a8f2.chunk.js.LICENSE.txt": "/mindeswallpaper/static/js/polyfills-dom.2e11a8f2.chunk.js.LICENSE.txt",
@@ -136,7 +136,7 @@
     "static/js/runtime-main.ec5a2f34.js",
     "static/css/4.fb545c49.chunk.css",
     "static/js/4.0607e983.chunk.js",
-    "static/css/main.fc08e234.chunk.css",
+    "static/css/main.b8e5cadd.chunk.css",
     "static/js/main.0829534d.chunk.js"
   ]
 }

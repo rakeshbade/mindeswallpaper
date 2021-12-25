@@ -71,7 +71,7 @@ function ApplyComponent() {
                 <IonButton type="button" onClick={downloadImage} size="large" disabled={(selectedIndex === null || selectedIndex === undefined)}>Download</IonButton>
             </IonRow>
             <IonRow className="ion-justify-content-center download-btn" >
-                <strong>Select you device (or other) and downlaod the image. Apply the image as wallpaper and make a difference on your screen.</strong>
+                Select your device(or other) and downlaod the image. Apply the image as wallpaper and make a difference on your screen.
             </IonRow>
         </div>
     )

@@ -3,8 +3,8 @@
     "static/js/0.62a0d3d8.chunk.js": "/mindeswallpaper/static/js/0.62a0d3d8.chunk.js",
     "static/js/0.62a0d3d8.chunk.js.map": "/mindeswallpaper/static/js/0.62a0d3d8.chunk.js.map",
     "main.css": "/mindeswallpaper/static/css/main.7056c93f.chunk.css",
-    "main.js": "/mindeswallpaper/static/js/main.e18d5805.chunk.js",
-    "main.js.map": "/mindeswallpaper/static/js/main.e18d5805.chunk.js.map",
+    "main.js": "/mindeswallpaper/static/js/main.2c9da3e1.chunk.js",
+    "main.js.map": "/mindeswallpaper/static/js/main.2c9da3e1.chunk.js.map",
     "polyfills-dom.js": "/mindeswallpaper/static/js/polyfills-dom.42fdc40d.chunk.js",
     "polyfills-dom.js.map": "/mindeswallpaper/static/js/polyfills-dom.42fdc40d.chunk.js.map",
     "runtime-main.js": "/mindeswallpaper/static/js/runtime-main.7537755d.js",
@@ -137,6 +137,6 @@
     "static/css/4.fb545c49.chunk.css",
     "static/js/4.8b879010.chunk.js",
     "static/css/main.7056c93f.chunk.css",
-    "static/js/main.e18d5805.chunk.js"
+    "static/js/main.2c9da3e1.chunk.js"
   ]
 }

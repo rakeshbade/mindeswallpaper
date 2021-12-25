@@ -1,5 +1,6 @@
 import React from 'react'
 import "pattern.css/dist/pattern.css";
+import "./../assets/styles/doodle/doodle.scss";
 import { useSelector } from 'react-redux';
 import { ColorPaletteModel } from '../models/color.model';
 

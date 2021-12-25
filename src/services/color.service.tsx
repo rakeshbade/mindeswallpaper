@@ -1,8 +1,8 @@
 const createColorPalette = (item: any) => {
     const colors = item.swatches;
-    const backgroundColor = colors[0].hex;
-    const patternColor = colors[Math.floor(colors.length / 2)].hex;
-    const textColor = colors[Math.floor(colors.length - 1)].hex;
+    const backgroundColor = colors[1].hex;
+    const patternColor = colors[2].hex;
+    const textColor = colors[3].hex;
     const id = item.id;
     
     return {

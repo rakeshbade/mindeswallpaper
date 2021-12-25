@@ -39,11 +39,16 @@ function ApplyComponent() {
                     canvasHeight: Number(h),
                     backgroundColor: selectedColor.background || '',
                 });
-                var link = document.createElement('a');
-                link.download = `${document.title}-${selectedPattern.name}.jpg`;
+                const link = document.createElement('a');
+                const fileName = `${document.title}-${selectedPattern.name}.jpg`;
+                link.target = '_blank';
+                link.download = fileName;
                 link.href = dataUrl;
+                ele.appendChild(link);
                 link.click();
-    
+                presentErrorAlert({
+                    message: "Cannot create image."
+                });
             }catch(err){
                 presentErrorAlert({
                     message: "Cannot create image."

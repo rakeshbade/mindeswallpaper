@@ -7,7 +7,7 @@ const createColorPalette = (item: any) => {
     
     return {
         background: '#' + backgroundColor,
-        pattern: '#' + patternColor + 70,
+        pattern: '#' + patternColor + 75,
         text: '#' + textColor,
         id: id
     }

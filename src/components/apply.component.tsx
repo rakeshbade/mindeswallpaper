@@ -23,6 +23,10 @@ function ApplyComponent() {
     const [presentErrorAlert] = useIonAlert();
     const downloadImage = () => {
         setShowLoading(true);
+        const link = document.createElement('a');
+        const fileName = `${document.title}-${selectedPattern.name}.jpg`;
+        link.target = '_blank';
+        link.download = fileName;
         setTimeout(async ()=>{
             const index:any = selectedIndex;
             const resolution = Resolutions[index]?.Resolution;
@@ -31,6 +35,7 @@ function ApplyComponent() {
             ele.className = selectedPattern.name;
             ele.style.color = selectedColor.pattern || '';
             document.body.appendChild(ele);
+            ele.appendChild(link);
             try{
                 const dataUrl = await htmlToImage.toJpeg(ele, {
                     width: Number(w),
@@ -39,16 +44,10 @@ function ApplyComponent() {
                     canvasHeight: Number(h),
                     backgroundColor: selectedColor.background || '',
                 });
-                const link = document.createElement('a');
-                const fileName = `${document.title}-${selectedPattern.name}.jpg`;
-                link.target = '_blank';
-                link.download = fileName;
                 link.href = dataUrl;
-                ele.appendChild(link);
-                link.click();
-                presentErrorAlert({
-                    message: "Cannot create image."
-                });
+                setTimeout(()=>{
+                    link.click();
+                }, 500)
             }catch(err){
                 presentErrorAlert({
                     message: "Cannot create image."

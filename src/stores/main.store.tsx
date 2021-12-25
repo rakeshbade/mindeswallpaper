@@ -14,6 +14,7 @@ const initialPattern:PatternModel = {
     id: "",
     mode: "",
     value: "",
+    image: ""
 };
 
 

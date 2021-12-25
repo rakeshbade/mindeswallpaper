@@ -18,7 +18,7 @@ const GridLayoutComponent = (props: { items: Array<any>, type: string }) => {
                 const palette = createPalette(item);
                 return palette ? <ColorComponent palette={palette} /> : ""
             case TypeConstants.pattern:
-                return <PatternComponent pattern={item.name} key={item.name} />
+                return <PatternComponent pattern={item} key={item.name} />
             // case "text":
             //     return 
             default:
